@@ -1,16 +1,64 @@
-/* Diagnostic Styling */
-/* * {
-  outline: 2px dotted gray;
-}  */
 
-/* temp background color */
-body {
-    background: lightgray;
-}
+/* Basic Styles */
+
+#bottom {
   
-/* vertical and horizontal centering */
-body {
-  display: grid;
-  place-content: center;
-  height: 100vh;
+  fill: 	#F08000;
 }
+
+
+
+#centerstroke {
+  
+  stroke: white;
+}
+
+
+
+svg {
+  width: 50px;
+  height: 50px;
+  animation: bounce-turn 3.125s ease infinite;
+  scale: 3.25;
+  stroke: white;
+  stroke-width: .5px;
+  fill: #FFAC1C;
+  }
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  
+}
+
+
+
+  
+  @keyframes bounce-turn {
+  0% {
+    transform: rotate(0deg); 
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg) scale(2); 
+  }
+  
+    
+    75% {
+    transform: translateY(75px) rotate(0deg) scale(1.5);
+  }
+    
+ 
+    
+  100% {
+    transform: translateY(0px) rotate(365deg) scale(1);
+  }
